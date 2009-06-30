@@ -1,0 +1,31 @@
+FlashMessages
+=============
+A Rails plugin to flash messages.
+Supports 4 message types: info, success, warning, error
+
+
+Install
+=======
+./script/plugin install git@github.com:michelbrito/flash_messages.git
+
+Add stylesheet
+<%= stylesheet_link_tag 'flash_messages' %>
+
+
+Example
+=======
+Controller
+
+flash[:info] = "My Information Message"
+
+flash[:success] = "My Success Message"
+
+flash[:warning] = "My Warning Message"
+
+flash[:error] = "My Error Message"
+
+View
+<%= flash_messages %>
+
+
+Copyright (c) 2009 Michel Brito, released under the MIT license
